@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--  -->
+        <!--    Document Title-->
+        <!-- =============================================-->
+        <title>Sparrow</title>
+        <!--  -->
+        <!--    Favicons-->
+        <!--    =============================================-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+        <link rel="manifest" href="assets/images/favicons/manifest.json">
+        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--  -->
+        <!--    Stylesheets-->
+        <!--    =============================================-->
+        <!-- Default stylesheets-->
+        <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template specific stylesheets-->
+        <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i|Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+        <link href="assets/lib/remodal/dist/remodal.css" rel="stylesheet">
+        <link href="assets/lib/remodal/dist/remodal-default-theme.css" rel="stylesheet">
+        <link href="assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+        <link href="assets/lib/semantic-ui-accordion/accordion.min.css" rel="stylesheet">
+        <link href="assets/lib/semantic-ui-transition/transition.min.css" rel="stylesheet">
+        <link href="assets/lib/prism/prism.css" rel="stylesheet">
+        <!-- Main stylesheet and color file-->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet"> </head>
+    <body class="has-sidemenu" data-spy="scroll" data-target=".inner-link" data-offset="60">
+        <aside class="side-nav" data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-xs='{"from":{"opacity":1,"y":-48},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+            data-zanim-trigger="scroll" data-exclusive="data-exclusive">
+            <nav class="background-black">
+                <a class="brand overflow-hidden" href="index.html">
+                    <img src="assets/images/logo-sparrow-invert.svg" alt="" width="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll" />
+                </a>
+                <div class="menu overflow-hidden">
+                    <div data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}' data-zanim-trigger="scroll">
+                        <div class="burger">
+                            <svg viewBox="0 0 700 700">
+                                <path id="burger-top" d="M200,250c0,0,220,0,300,0c160,0,188.9,407.1-1.5,217.5C387,356.5,199,168,199,168"></path>
+                                <path id="burger-middle" d="M200,320h300"></path>
+                                <path id="burger-bottom" d="M199,469.8c0,0,188-188.5,299.5-299.5C688.9-19.2,660,387.8,500,387.8c-80,0-300,0-300,0"></path>
+                            </svg>
+                        </div>
+                        <div class="hamburger hamburger--emphatic js-hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="content">
+                    <li data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll">
+                        <a href="#">
+                            <span class="fab fa-twitter color-white fs-1"></span>
+                        </a>
+                    </li>
+                    <li data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll">
+                        <a class="color-white font-1 ls fw-900 fs--1" href="#" data-remodal-target="language">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar">
+                <div class="navbar-content">
+                    <div class="v-middle">
+                        <ul>
+                            <li>
+                                <a href="JavaScript:void(0)">
+                                    <span>homes</span>
+                                </a>
+                                <div class="inner-level">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <ul class="list-unstyled mt-2">
+                                                <li>
+                                                    <a class="color-9" href="index--default.html">Default</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--bicycle.html">Bicycle</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--bigcartel.html">Bigcartel</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--cafe.html">Cafe</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--digital.html">Digital</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--event.html">Event</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--ecommerce.html">E-commerce</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--interior.html">Interior</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--landing.html">Landing</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--promotion.html">Promotion</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--software.html">Software</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="index--studio.html">Studio</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="JavaScript:void(0)">
+                                    <span>pages</span>
+                                </a>
+                                <div class="inner-level">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-lg-12 col-xl-4">
+                                            <ul class="list-unstyled mt-2">
+                                                <li>
+                                                    <a class="color-9" href="page--404.html">404</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--about.html">About</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--blog.html">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--single-blog.html">Blog Single</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--cart.html">Cart</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--coming-soon.html">Coming Soon</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--contact.html">Contact</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--header-split-static.html">Split Static</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--header-split-youtube-background.html">Split Youtube</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--one-page.html">One Page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4 col-lg-12 col-xl-4">
+                                            <ul class="list-unstyled mt-sm-2 mt-lg-0 mt-xl-2">
+                                                <li>
+                                                    <a class="color-9" href="page--portfolio.html">Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--profile.html">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--rtl.html">RTL</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--services.html">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--shop.html">Shop</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--signin.html">Signin</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--signup.html">Signup</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--casestudy.html">Case Study</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="page--single-product.html">Product</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="JavaScript:void(0)">
+                                    <span>components</span>
+                                </a>
+                                <div class="inner-level">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-lg-12 col-xl-4">
+                                            <ul class="list-unstyled mt-2">
+                                                <li>
+                                                    <a class="color-9" href="components-accordion.html">Accordion</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-alerts.html">Alerts</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-backgrounds.html">Backgrounds</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-badge.html">Badge</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-border-and-radius.html">Border &amp; Radius</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-buttons.html">Buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-cards.html">Cards</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-owlcarousel.html">Carousel</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-colors.html">Colors</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-dropdowns.html">Dropdown &amp; Dropup</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-filter.html">Filter - isotope</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4 col-lg-12 col-xl-4">
+                                            <ul class="list-unstyled mt-sm-2 mt-lg-0 mt-xl-2">
+                                                <li>
+                                                    <a class="color-9" href="components-forms.html">Form elements</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-grid.html">Grid system</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-layout-helpers.html">Layout helpers</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-icons.html">Icons</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-lightbox.html">Lightbox</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-googlemap.html">Google map</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-masonry.html">Masonry grid</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-modal-video.html">Modal video</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-modals.html">Modals</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-navigations.html">Navigations</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-navigation-in-page.html">Navigation in page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4 col-lg-12 col-xl-4">
+                                            <ul class="list-unstyled mt-sm-2 mt-lg-0 mt-xl-2">
+                                                <li>
+                                                    <a class="color-9" href="components-parallax.html">Parallax</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-php-ajax-form.html">PHP-AJAX form</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-scrollspy.html">Scrollspy</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-slider.html">Slider</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-spacing.html">Spacing</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-tables.html">Tables</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-tabs.html">Tabs</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-tooltips.html">Tooltips</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-typed-text.html">Typed Text</a>
+                                                </li>
+                                                <li>
+                                                    <a class="color-9" href="components-typography.html">Typography</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="page--portfolio.html">
+                                    <span>portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page--shop.html">
+                                    <span>shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="page--contact.html">
+                                    <span>contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="loading" id="preloader">
+                <div class="h-100 d-flex align-items-center align-items-lg-end justify-content-center justify-content-lg-end pb-lg-6 pr-lg-8">
+                    <div class="loader">
+                        <div class="line-scale-pulse-out-rapid">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="top"></div>
+            <section class="background-11 pb-7 pt-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <h2 data-zanim-xs='{"delay":0.1}'>Navigations</h2>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="lead mb-0" data-zanim-xs='{"delay":0.2}'>These modular elements can be readily used and customized in every layout across pages.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+            <section class="py-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-none d-lg-block">
+                            <div class="py-8 pl-3" id="sticky-kit">
+                                <h5 class="mb-3 fs-0">Jump into</h5>
+                                <ul class="list-unstyled font-1" id="navigation-elements" style="font-size: 0.85rem;">
+                                    <li>
+                                        <a class="color-4" href="components-accordion.html">Accordion</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-alerts.html">Alerts</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-backgrounds.html">Backgrounds</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-badge.html">Badge</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-border-and-radius.html">Border &amp; Radius</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-buttons.html">Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-cards.html">Cards</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-owlcarousel.html">Carousel</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-colors.html">Colors</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-dropdowns.html">Dropdown &amp; Dropup</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-filter.html">Filter - isotope</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-forms.html">Form elements</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-grid.html">Grid system</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-layout-helpers.html">Layout helpers</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-icons.html">Icons</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-lightbox.html">Lightbox</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-googlemap.html">Google map</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-masonry.html">Masonry grid</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-modal-video.html">Modal video</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-modals.html">Modals</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-navigations.html">Navigations</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-navigation-in-page.html">Navigation in page</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-parallax.html">Parallax</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-php-ajax-form.html">PHP-AJAX form</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-scrollspy.html">Scrollspy</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-slider.html">Slider</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-spacing.html">Spacing</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-tables.html">Tables</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-tabs.html">Tabs</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-tooltips.html">Tooltips</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-typed-text.html">Typed Text</a>
+                                    </li>
+                                    <li>
+                                        <a class="color-4" href="components-typography.html">Typography</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 py-6 py-lg-8">
+                            <h4>Special Navigation bar</h4>
+                            <p>Add class <code>.background-black</code> to <code>nav</code> if dark navigation is needed in mobile or tab.</p> <pre class="mt-4"><code class="lang-html">&lt;aside data-zanim-lg='{&quot;from&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:70},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.3}' data-zanim-xs='{&quot;from&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:-48},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;y&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.3}' data-zanim-trigger=&quot;scroll&quot; data-exclusive=&quot;data-exclusive&quot; class=&quot;side-nav&quot;&gt;
+	&lt;nav&gt;&lt;a href=&quot;index.html&quot; class=&quot;brand overflow-hidden&quot;&gt;&lt;img src=&quot;assets/images/logo-sparrow-invert.svg&quot; alt=&quot;&quot; width=&quot;30&quot; data-zanim-lg='{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:45},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.4}' data-zanim-trigger=&quot;scroll&quot;/&gt;&lt;/a&gt;
+		&lt;div class=&quot;menu overflow-hidden&quot;&gt;
+			&lt;div data-zanim-lg='{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:45},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.5}' data-zanim-trigger=&quot;scroll&quot;&gt;
+				&lt;div class=&quot;burger&quot;&gt;
+					&lt;svg viewBox=&quot;0 0 700 700&quot;&gt;
+						&lt;path id=&quot;burger-top&quot; d=&quot;M200,250c0,0,220,0,300,0c160,0,188.9,407.1-1.5,217.5C387,356.5,199,168,199,168&quot;&gt;&lt;/path&gt;
+						&lt;path id=&quot;burger-middle&quot; d=&quot;M200,320h300&quot;&gt;&lt;/path&gt;
+						&lt;path id=&quot;burger-bottom&quot; d=&quot;M199,469.8c0,0,188-188.5,299.5-299.5C688.9-19.2,660,387.8,500,387.8c-80,0-300,0-300,0&quot;&gt;&lt;/path&gt;
+					&lt;/svg&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;hamburger hamburger--emphatic js-hamburger&quot;&gt;
+					&lt;div class=&quot;hamburger-box&quot;&gt;
+						&lt;div class=&quot;hamburger-inner&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;ul class=&quot;content&quot;&gt;
+			&lt;li data-zanim-lg='{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:45},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.4}' data-zanim-trigger=&quot;scroll&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;fab fa-twitter color-white fs-1&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li data-zanim-lg='{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:45},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;ease&quot;:&quot;CubicBezier&quot;,&quot;duration&quot;:0.8,&quot;delay&quot;:0.4}' data-zanim-trigger=&quot;scroll&quot;&gt;&lt;a href=&quot;#&quot; data-remodal-target=&quot;language&quot; class=&quot;color-white font-1 ls fw-900 fs--1&quot;&gt;EN&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class=&quot;navbar&quot;&gt;
+			&lt;div class=&quot;navbar-content&quot;&gt;
+				&lt;div class=&quot;v-middle&quot;&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;a href=&quot;JavaScript:void(0)&quot;&gt;&lt;span&gt;Dropwdown&lt;/span&gt;&lt;/a&gt;
+							&lt;div class=&quot;inner-level&quot;&gt;...&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Link&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/nav&gt;
+&lt;/aside&gt;
+
+</code></pre>
+                            <h4 class="mt-5">Traditional Navigation bar</h4>
+                            <h5 class="mt-4">Color scheme</h5>
+                            <p>Use the following classes or their combinations along with <code>.znav-container</code> to update the navigtation scheme:</p>
+                            <ol>
+                                <li><code>.znav-white</code></li>
+                                <li><code>.znav-dark</code></li>
+                                <li><code>.znav-transperent</code></li>
+                                <li><code>.znav-semi-transperent</code></li>
+                            </ol>
+                            <p>NB: <code>.znav-semi-transperent</code> only works with <code>.znav-white</code> and <code>.znav-dark</code></p> <pre class="mt-5"><code class="lang-html">&lt;div id=&quot;znav-container&quot; class=&quot;znav-container znav-dark&quot;&gt;
+	.....
+&lt;/div&gt;</code></pre> <pre class="mt-5"><code class="lang-html">&lt;div id=&quot;znav-container&quot; class=&quot;znav-container znav-dark znav-semi-transperent&quot;&gt;
+	.....
+&lt;/div&gt;
+</code></pre>
+                            <h5 class="mt-5">Multi-level dropdown menu</h5>
+                            <p>Sparrow has multi-level dropdown menu feature. Nesting the list you can make the multi-level dropdown menu. By default the menu appears at the right side of the corresponding item. If you want to push the menu to the left side,
+                                just add<code>.dropdown-push-left</code> class along with <code>.dropdown</code> class.</p> <pre class="mt-5"><code class="lang-html">&lt;ul class=&quot;dropdown dropdown-push-left&quot;&gt;
+	.....
+&lt;/ul&gt;</code></pre> </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+        </main>
+        <section class="background-black color-6 py-4 font-1 text-center footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 order-lg-2">
+                        <a class="arrow-up" data-zanim-timeline="{}" data-zanim-trigger="scroll" href="#top">
+                            <span class="btn__arrow btn__arrow--top" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.1}'></span>
+                            <span class="btn__arrow btn__arrow--bottom" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.25}'></span>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+                        <p class="fs--1 text-uppercase ls fw-600 mb-0"> Copyright &copy; Sparrow&trade; inc.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+                        <p class="fs--1 text-uppercase ls fw-600 mb-0">Made with
+                            <span class="color-danger">&hearts; </span>by
+                            <a class="color-6" href="https://themewagon.com/">Themewagon</a>
+                        </p>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+        <div class="remodal background-black" data-remodal-id="language" style="max-width: 200px; padding: 0;">
+            <div class="pos-absolute" style="right: 0; padding: 8px; cursor: pointer;">
+                <span class="far fa-times color-3" data-remodal-action="close"></span>
+            </div>
+            <ul class="list-unstyled pl-0 my-0 py-4 font-1">
+                <li>
+                    <a class="pt-1 d-block color-white fw-600" href="#">English</a>
+                </li>
+                <li>
+                    <a class="pt-1 d-block color-7" href="#">Français</a>
+                </li>
+                <li>
+                    <a class="pt-1 d-block color-7" href="page--rtl.html">عربى </a>
+                </li>
+                <li>
+                    <a class="pt-1 d-block color-7" href="#">Deutsche</a>
+                </li>
+            </ul>
+        </div>
+        <!--  -->
+        <!--    JavaScripts-->
+        <!--    =============================================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/config.js"></script>
+        <script src="assets/lib/@fortawesome/js/fontawesome-all.min.js"></script>
+        <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/lib/remodal/dist/remodal.js"></script>
+        <script src="assets/lib/jquery-menu-aim/jquery.menu-aim.js"></script>
+        <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+        <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <script src="assets/lib/CustomEase.min.js"></script>
+        <script src="assets/lib/rellax/rellax.min.js"></script>
+        <script src="assets/js/zanimation.js"></script>
+        <script src="assets/lib/stickyfilljs/dist/stickyfill.min.js"></script>
+        <script src="assets/lib/lightbox2/dist/js/lightbox.js"></script>
+        <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
+        <script src="assets/lib/semantic-ui-accordion/accordion.min.js"></script>
+        <script src="assets/lib/semantic-ui-transition/transition.min.js"></script>
+        <script src="assets/lib/prism/prism.js"></script>
+        <script src="assets/lib/sticky-kit/dist/sticky-kit.min.js"></script>
+        <script src="assets/js/core.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

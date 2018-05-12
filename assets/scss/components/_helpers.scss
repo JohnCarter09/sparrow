@@ -1,0 +1,252 @@
+// 
+// Layout Helpers
+//
+.container{ position: relative; }
+section{
+	position: relative;
+	// overflow: hidden;
+    padding: map-get($spacers, 8) 0;
+    @include mq($until: tablet) { padding: map-get($spacers, 6) 0; }
+}
+
+.h-full{
+    min-height: 100vh;
+
+}
+@include mq($from: desktop) {
+    .h-lg-full{
+        min-height: 100vh;
+    }
+}
+.h-half {
+    min-height: 50vh;
+} 
+.h-100vh{ height: 100vh !important; }
+@include mq($from: mobile) {.h-sm-100vh{height: 100vh !important; } }
+@include mq($from: tablet) {.h-md-100vh{height: 100vh !important; } }
+@include mq($from: desktop) {.h-lg-100vh{height: 100vh !important; } }
+@include mq($from: wide) {.h-xl-100vh{height: 100vh !important; } }
+
+.perpendicular{
+    position: absolute;
+    bottom: 0;
+    transform-origin: left;
+    transform: rotate(-90deg);
+    line-height: 0;
+}
+
+
+////////////////////////////////////////////////////////////////////
+// Utility --- should be seperated from helpers in a new file
+////////////////////////////////////////////////////////////////////
+
+/* Background */
+.background-holder{
+	position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; // Indexing fixed
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+
+    &.background-fixed{
+        background-attachment: fixed;
+    }
+    &.parallax{
+        // min-height:100vh;
+    }
+    &.background-right{
+        left: auto;
+        right: 0;
+    }
+    &.overlay:before {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.25);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1; // indexing fixed
+    }
+
+    &.overlay-primary:before{ background: rgba(map-get($colors, primary), 0.4); }
+    &.overlay-info:before{ background: rgba(map-get($colors, info), 0.4); }
+    &.overlay-success:before{ background: rgba(map-get($colors, success), 0.4); }
+    &.overlay-warning:before{ background: rgba(map-get($colors, warning), 0.4); }
+    &.overlay-danger:before{ background: rgba(map-get($colors, danger), 0.4); }
+    &.overlay-0:before{ background: rgba(#000, 0.7); }
+    &.overlay-1:before{ background: rgba(#000, 0.55); }
+    &.overlay-2:before{ background: rgba(#000, 0.4); }
+    
+    video {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        min-width: 100%;
+    }
+    .youtube-background {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        .mb_YTPBar { display: none !important; }
+    }
+}
+.has-parallax{
+    position: relative;
+    overflow: hidden;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-hidden-x{
+    overflow-x: hidden;
+}
+.overflow-hidden-y{
+    overflow-y: hidden;
+}
+
+hr{
+    border-color: currentColor;
+    &.left{ margin-left: 0; }
+    &.short{ width: modular-scale(5); }
+}
+
+
+// ////////////////////////////
+// // Colors Helper
+// ////////////////////////////
+@each $index, $color in $colors{
+    .color-#{$index}{ color: $color !important; }
+    .background-#{$index}{ background-color: $color !important; }
+    .border-color-#{$index}{ border-color: $color !important; }
+}
+
+.background-transparent{
+    background-color: transparent !important;;
+    @include hover-focus { background-color: transparent !important; }
+}
+
+.badge-white{ background-color: #ffffff; }
+.badge-primary{ background-color: map-get($colors, primary); }
+.badge-info{ background-color: map-get($colors, info); }
+.badge-success{ background-color: map-get($colors, success); }
+.badge-warning{ background-color: map-get($colors, warning); }
+.badge-danger{ background-color: map-get($colors, danger); }
+
+
+
+// ////////////////////////////
+// // Object Helper
+// ////////////////////////////
+.fit-fill { object-fit: fill; }
+.fit-contain { object-fit: contain; }
+.fit-cover { object-fit: cover; }
+.fit-none { object-fit: none; }
+.fit-scale-down { object-fit: scale-down; }
+
+
+// To be refactored
+.opacity-75{ opacity: 0.75; }
+.opacity-50{ opacity: 0.50; }
+
+.elevated{ box-shadow: 0 0 40px rgba(0, 0, 0, 0.08); }
+.box-shadow-wide{ box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2); }
+
+
+// Sizing and positioning
+// Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.
+// ////////////////////////////
+// Postition helpers
+// ////////////////////////////
+.r-0{ right: 0; }
+.l-0{ left: 0; }
+.t-0{ top: 0; }
+.b-0{ bottom: 0; }
+.a-0{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.absolute-centered{
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.sticky-top{
+    z-index: 1020;
+    position: sticky;
+    top: 0;
+}
+
+$direction: "";
+@mixin position{
+    .pos#{$direction}-relative{ position: relative; }
+    .pos#{$direction}-absolute{ position: absolute; }
+    .pos#{$direction}-fixed{ position: fixed; }
+}
+@mixin sizing{
+    .w#{$direction}-100{
+        width: 100% !important;
+    }
+    .w#{$direction}-75{
+        width: 75% !important;
+    }
+    .w#{$direction}-50{
+        width: 50% !important;
+    }
+    .w#{$direction}-25{
+        width: 25% !important;
+    }
+
+    .h#{$direction}-100{
+        height: 100% !important;
+    }
+    .h#{$direction}-75{
+        height: 75% !important;
+    }
+    .h#{$direction}-50{
+        height: 50% !important;
+    }
+    .h#{$direction}-25{
+        height: 25% !important;
+    }
+}
+
+@include position;
+@include sizing;
+
+$direction: -sm;
+@include mq($from: mobile) {
+    @include position;
+    @include sizing;
+}
+$direction: -md;
+@include mq($from: tablet) {
+    @include position;
+    @include sizing;
+}
+$direction: -lg;
+@include mq($from: desktop) {
+    @include position;
+    @include sizing;
+}
+$direction: -xl;
+@include mq($from: wide) {
+    @include position;
+    @include sizing;
+}
